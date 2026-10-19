@@ -8,9 +8,16 @@ public class FullNameApplication {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Please enter your name\nFirst name: ");
-        String input = scanner.nextLine();
-        String firstname = input.trim();
+        String input1 = scanner.nextLine();
+        String firstName = input1.trim();
 
-        System.out.println(firstname);
+        System.out.println(firstName);
+
+        System.out.print("Middle name: ");
+        String input2 = scanner.nextLine();
+        String middleName = input2.isEmpty() ? "" : input2.trim();
+
+        System.out.println("middle name = " + middleName + middleName.length());
+
     }
 }
